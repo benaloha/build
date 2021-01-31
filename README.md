@@ -11,7 +11,7 @@ https://www.bitsy.ai/3-ways-to-install-tensorflow-on-raspberry-pi/
 
 ## Build
 
--follow instructions
+-follow instructions  
 -this command
 ```
 tensorflow/tools/ci_build/ci_build.sh PI-PYTHON38 \
