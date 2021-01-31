@@ -2,17 +2,13 @@
 
 [Instruction](raspberry_pi_builds/README.md)
 
-[Blog](https://www.bitsy.ai/3-ways-to-install-tensorflow-on-raspberry-pi)
+[Bitsy's Blog](https://www.bitsy.ai/3-ways-to-install-tensorflow-on-raspberry-pi)
 
 ## Build
 
-### Download the TensorFlow source code
-
-[TensorFlow repository](https://github.com/tensorflow/tensorflow):
+### Checkout a TensorFlow version
 
 ```
-git clone https://github.com/tensorflow/tensorflow.git
-cd tensorflow
 git checkout v2.4.0
 ```
 
