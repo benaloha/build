@@ -9,6 +9,8 @@
 ### Checkout a TensorFlow version
 
 ```
+git clone https://github.com/benaloha/tensorflow.git
+cd tensorflow
 git checkout v2.4.0
 ```
 
@@ -20,6 +22,8 @@ tensorflow/tools/ci_build/ci_build.sh PI-PYTHON38 \
 ```
 
 This takes 2 hrs on my PC (Intel i7)
+
+
 
 ## Original README
 
