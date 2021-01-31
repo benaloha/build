@@ -1,31 +1,18 @@
-# Tensorflow build
+# Tensorflow cross-compile build for RPI
 
-## Original Readme
-[Original README](README1.md)
+[Instruction](raspberry_pi_builds/README.md)
 
-## RPI crosscompile
-[Build for RPI](raspberry_pi_builds/README.md)
-
-## Blog
-https://www.bitsy.ai/3-ways-to-install-tensorflow-on-raspberry-pi/
+[Blog](https://www.bitsy.ai/3-ways-to-install-tensorflow-on-raspberry-pi)
 
 ## Build
 
 ### Download the TensorFlow source code
 
-Use [Git](https://git-scm.com/) to clone the
 [TensorFlow repository](https://github.com/tensorflow/tensorflow):
 
 ```
 git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow
-```
-
-The repo defaults to the `master` development branch. You can also checkout a
-[release branch](https://github.com/tensorflow/tensorflow/releases)
-to build:
-
-```
 git checkout v2.4.0
 ```
 
@@ -37,3 +24,69 @@ tensorflow/tools/ci_build/ci_build.sh PI-PYTHON38 \
 ```
 
 This takes 2 hrs on my PC (Intel i7)
+
+## Original README
+
+<div align="center">
+  <img src="https://github.com/tensorflow/community/blob/master/sigs/logos/SIGBuild.png" width="60%"><br><br>
+</div>
+
+-----------------
+
+[![Gitter chat](https://img.shields.io/badge/chat-on%20gitter-46bc99.svg)](https://gitter.im/tensorflow/sig-build)
+[![SIG Build Forum](https://img.shields.io/badge/discuss-on%20tensorflow.org-orange)](https://groups.google.com/a/tensorflow.org/g/build)
+
+**TensorFlow SIG Build** is a community group dedicated to the TensorFlow build
+process. This repository is a showcase of resources, guides, tools, and builds
+contributed by the community, for the community.
+
+## Group
+
+### Contributing
+
+SIG Build is a community-led open source project. As such, the project
+depends on public contributions, bug-fixes, and documentation. Please
+see [contribution guidelines](CONTRIBUTING.md) for a guide on how to
+contribute. This project adheres to [TensorFlow's code of conduct](CODE_OF_CONDUCT.md).
+By participating, you are expected to uphold this code.
+
+### Community
+
+* [Public Mailing List](https://groups.google.com/a/tensorflow.org/forum/#!forum/build)
+* [SIG Monthly Meeting Notes](https://docs.google.com/document/d/10_3IQ5aF-88ADJNLF0WOpb09bZ15x-sBnRSnDHNCNr8/edit)
+    * Join our mailing list and receive calendar invites to the meeting.
+
+### License
+[Apache License 2.0](LICENSE)
+
+## Project Showcase
+
+Want to add your own project to this list? It's easy: check out
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Docker
+
+* [**Manylinux 2014 Docker Images**](manylinux_2014_docker_images):
+  `manylinux2014` build environment for TensorFlow packages.
+* [**Distroless Dockerfiles**](https://github.com/uvarc/rivanna-docker):
+  Distroless ([info](https://github.com/GoogleContainerTools)) TensorFlow
+  images, which are smaller than TensorFlow's official images.
+
+### Platforms
+
+* [**ppc64le Builds**](ppc64le_builds): Dockerfiles and wheel build scripts for
+  building TF on ppc64le.
+
+* [**WSL2 GPU Guide**](wsl2_gpu_guide): Instructions for enabling GPU with Tensorflow
+  on a WSL2 virtual machine.
+
+* [**Raspberry Pi Builds**](raspberry_pi_builds): TensorFlow's old official docs
+  for building on Raspberry Pi. Needs an owner.
+
+
+
+### WIP / Other
+
+* [**Tekton CI**](tekton): perfinion's experimental directory for using Tekton 
+  CI with TensorFlow
+* [**Directory Template**](directory_template): Example short description.
