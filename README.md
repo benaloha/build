@@ -12,7 +12,7 @@
 git checkout v2.4.0
 ```
 
-### Build cmd
+### Build cmd for Ubuntu 64 bit RPI
 
 ```
 tensorflow/tools/ci_build/ci_build.sh PI-PYTHON38 \
